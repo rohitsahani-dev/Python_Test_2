@@ -1,6 +1,6 @@
 import pandas
 
-df = pandas.read_csv("data1.csv")
+df = pandas.read_csv("T_16.csv")
 
 d = {'UK': 0, 'USA': 1, 'N': 2}
 df['Nationality'] = df['Nationality'].map(d)
