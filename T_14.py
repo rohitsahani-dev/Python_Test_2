@@ -1,14 +1,9 @@
-import pandas as pd
-from sklearn import linear_model
+import numpy
+import matplotlib.pyplot as plt
+numpy.random.seed(2)
 
-df=pd.read_csv('data.csv')
-x=df[['weight','volume']]
-y=df['CO2']
+x = numpy.random.normal(3, 1, 100)
+y = numpy.random.normal(150, 40, 100) / x
 
-reg=linear_model.LinearRegression()
-reg.fit(x,y)
-
-pridictc02=reg.predict([[2300,3000]])
-
-print(pridictc02)
-
+plt.scatter(x, y)
+plt.show()
