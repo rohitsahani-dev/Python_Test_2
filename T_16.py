@@ -9,3 +9,4 @@ d = {'YES': 1, 'NO': 0}
 df['Go'] = df['Go'].map(d)
 
 print(df)
+
